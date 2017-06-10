@@ -1,0 +1,116 @@
+/* ---- Navigation ---- */
+
+.main-header {
+	@extend %centered;
+	background-color: $Alabaster;
+
+	@media #{$brk-lrg} {
+		text-align: left;
+	}
+		& h1 {
+			font-family: 'Domine', serif;
+			padding-top: .5em;
+			font-size: 2em;
+
+			@media #{$brk-med} {
+				padding-top: 1.5em;
+				// padding-bottom: 1.5em;
+			}
+
+			@media #{$brk-lrg} {
+				padding-top: .5em;
+				display: inline-block;
+		}
+}
+}
+
+// .main-header h1 {
+// 	font-family: 'Domine', serif;
+// 	padding-top: .5em;
+// 	font-size: 2em;
+//
+// 	@media #{$brk-med} {
+// 		padding-top: 1.5em;
+// 		// padding-bottom: 1.5em;
+// 	}
+//
+// 	@media #{$brk-lrg} {
+// 		padding-top: .5em;
+// 		display: inline-block;
+// 	}
+// }
+
+.main-nav {
+	@media #{$brk-med} {
+		padding-top: .5em;
+		padding-bottom: 2em;
+	}
+
+	@media #{$brk-lrg} {
+		padding-bottom: 0;
+	}
+		& a:hover {
+			color: $link-hover;
+		}
+}
+
+ul.main-nav {
+	@media #{$brk-lrg} {
+		display: inline;
+		float: right;
+		padding-top: 1.5em;
+		padding-bottom: 2em;
+		padding-right: 2em;
+
+		& li {
+			display: inline;
+			padding: 2em;
+		}
+	}
+}
+
+
+.main-nav li {
+	background-color: $White;
+	padding: .5em 2em;
+	margin: .5em auto;
+	width: 90%;
+	font-family: 'Domine', serif;
+
+	@media #{$brk-med} {
+			display: inline-block;
+			background-color: $Alabaster;
+			width: 20%;
+	}
+
+		& a {
+			color: $Tundora;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+}
+
+// .name,
+// .main-nav li a {
+// 	color: $Tundora;
+// 	font-weight: 700;
+// }
+
+.name {
+	color: $Tundora;
+	font-weight: 700;
+
+	@media #{$brk-lrg} {
+		padding-left: 2em;
+		padding-bottom: 2em;
+	}
+}
+
+
+// .main-nav li a {
+// 	text-transform: uppercase;
+// }
+
+// nav a:hover {
+// 	color: $link-hover;
+// }

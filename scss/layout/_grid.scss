@@ -1,0 +1,56 @@
+/* ---- Layout Containers ---- */
+
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.col,
+.col-2 {
+	@extend %centered;
+
+	@media #{$brk-med} {
+		width: 50%;
+	}
+
+	@media #{$brk-lrg} {
+		float: left;
+		padding: 1em;
+	}
+}
+
+
+.col {
+	@media #{$brk-lrg} {
+		width: 33%;
+	}
+}
+
+.col-2 {
+	@media #{$brk-med} {
+		float: left;
+	}
+}
+
+.col:nth-of-type(even) {
+	@media #{$brk-med} {
+		float: right;
+		padding-left: .5em;
+	}
+
+	@media #{$brk-lrg} {
+		float: left;
+	}
+}
+
+.col:nth-of-type(odd) {
+	@media #{$brk-med} {
+		padding-right: .5em;
+		float: left;
+}
+}
+
+.col .last {
+	margin-bottom: 2em;
+}

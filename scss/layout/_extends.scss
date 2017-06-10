@@ -1,0 +1,18 @@
+
+
+// Center Text
+
+%centered {
+  text-align: center;
+}
+
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -1,0 +1,33 @@
+
+
+.main-header,
+.portfolio,
+.intro,
+.skills,
+.contact,
+.mini-footer {
+  @extend %clearfix;
+}
+
+.container {
+  @media #{$brk-med} {
+    float: right;
+    width: 50%;
+      &-text {
+        float: left;
+        width: 50%;
+    }
+  }
+}
+
+.intro {
+  @media #{$brk-med} {
+    padding-bottom: 3.5em;
+  }
+}
+
+.main-footer p {
+  @media #{$brk-med} {
+    width: 60%;
+  }
+}

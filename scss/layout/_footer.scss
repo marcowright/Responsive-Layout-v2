@@ -1,0 +1,91 @@
+
+
+.main-footer {
+	@extend %centered;
+	background-color: $Alabaster;
+
+	& p {
+		width: 80%;
+		margin: 0 auto 1.5em;
+	}
+
+	& h3 {
+		text-transform: uppercase;
+		padding-top: 3em;
+		padding-bottom: 1em;
+	}
+}
+
+span.contact {
+	display: block;
+
+	& a {
+		color: $Armadillo;
+		font-weight: 700;
+	}
+
+	&:nth-of-type(2) {
+		padding-bottom: 3.5em;
+
+	}
+}
+
+.mini-footer {
+	border-top: 1px solid $Gray;
+
+	& span {
+		padding-top: 2em;
+		padding-bottom: 1em;
+		font-weight: 700;
+
+		@media #{$brk-med} {
+			padding-top: 1.25em;
+			padding-bottom: 4em;
+		}
+
+		@media #{$brk-lrg} {
+			padding-bottom: 1.5em;
+		}
+	}
+
+	& a {
+		font-family: 'Domine', serif;
+		color: $Armadillo;
+	}
+}
+
+div.mini-footer span:nth-of-type(1) {
+	float: left;
+}
+
+div.mini-footer span:nth-of-type(2) {
+	float: right;
+	text-transform: uppercase;
+
+	@media #{$brk-med} {
+		display: none;
+	}
+}
+
+.mini-nav {
+	display: none;
+	font-family: 'Domine', serif;
+
+	@media #{$brk-med} {
+		display: inline-block;
+		text-transform: uppercase;
+		float: right;
+	}
+
+	& li {
+		@media #{$brk-med} {
+			float: left;
+			font-weight: 700;
+			padding: 1.25em 1em 4em 1em;
+		}
+	}
+
+	& a:hover {
+		color: $link-hover;
+	}
+}

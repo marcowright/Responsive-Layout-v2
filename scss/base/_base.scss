@@ -1,0 +1,40 @@
+// base.scss
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	@include text (1em, 1.6, $color: $Armadillo );
+	font-family: 'Work Sans', sans-serif;
+}
+
+p {
+	font-size: 1em;
+	/*margin-bottom: 1.8em;*/
+}
+
+h2,
+h3,
+a {
+	color: $Black-Russian;
+}
+
+h2,
+h3 {
+	font-family: 'Domine', serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}

@@ -1,0 +1,48 @@
+
+
+.profile {
+	width: 60%;
+	padding-top: 2.5em;
+	padding-bottom: .5em;
+
+	@media #{$brk-med} {
+		width: 80%;
+		padding-bottom: 0;
+		padding-top: 0;
+		padding-left: 1em;
+		padding-right: 1.25em;
+	}
+
+	@media #{$brk-lrg} {
+		width: 90%;
+	}
+}
+
+
+.col-2 img {
+	width: 256px;
+	height: 256px;
+
+	@media #{$brk-med} {
+		width: 192px;
+		height: 192px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	@media #{$brk-lrg} {
+		width: 256px;
+		height: 256px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.skills ul li {
+
+	@media #{brk-med} {
+		width: 50%;
+		margin: 2em auto;
+	}
+
+}
