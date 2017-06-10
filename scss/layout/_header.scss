@@ -21,24 +21,8 @@
 				padding-top: .5em;
 				display: inline-block;
 		}
+	}
 }
-}
-
-// .main-header h1 {
-// 	font-family: 'Domine', serif;
-// 	padding-top: .5em;
-// 	font-size: 2em;
-//
-// 	@media #{$brk-med} {
-// 		padding-top: 1.5em;
-// 		// padding-bottom: 1.5em;
-// 	}
-//
-// 	@media #{$brk-lrg} {
-// 		padding-top: .5em;
-// 		display: inline-block;
-// 	}
-// }
 
 .main-nav {
 	@media #{$brk-med} {
@@ -90,12 +74,6 @@ ul.main-nav {
 		}
 }
 
-// .name,
-// .main-nav li a {
-// 	color: $Tundora;
-// 	font-weight: 700;
-// }
-
 .name {
 	color: $Tundora;
 	font-weight: 700;
@@ -105,12 +83,3 @@ ul.main-nav {
 		padding-bottom: 2em;
 	}
 }
-
-
-// .main-nav li a {
-// 	text-transform: uppercase;
-// }
-
-// nav a:hover {
-// 	color: $link-hover;
-// }
